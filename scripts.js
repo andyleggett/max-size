@@ -1,6 +1,6 @@
 //@ts-check
 
-(function (W, D) {
+(function (window, document) {
 
     const resize = (elem) => {
 
@@ -25,7 +25,7 @@
         })
     }
 
-    const sizers = D.querySelectorAll('.max-size')
+    const sizers = document.querySelectorAll('.max-size')
     sizers.forEach(resize)
 
 })(window, document)
